@@ -10,15 +10,21 @@ import { IMovie } from './models/IMovie';
 export class AppComponent implements OnInit {
   title = 'client';
   moviesArray: IMovie[];
-  searchvalue = '';
+  moviesToShow: IMovie[];
 
   constructor(private movieService: FakeMovieServiceService) {}
+
   ngOnInit(): void {
-    this.moviesArray = this.movieService.getMovies();
+    this.moviesToShow = this.moviesArray = this.movieService.getMovies();
   }
 
   onSearch(event: any) {
-    this.searchvalue += event.value;
-    console.log(this.searchvalue);
+    const searchvalue = event.target.value;
+
+    this.moviesToShow = searchvalue
+      ? this.moviesArray.filter(
+          movie => movie.title.toLowerCase() === searchvalue.toLowerCase()
+        )
+      : this.moviesArray;
   }
 }

@@ -9,7 +9,7 @@
               placeholder="Search..."
               name="searchInput"
               #searchInput
-              (change)="onSearch(searchInput)"
+              (change)="onSearch($event)"
             />
           </div>
         </div>
@@ -28,7 +28,7 @@
     <div class="nine wide column">
       <div class="ui link cards">
         <app-movie
-          *ngFor="let movie of moviesArray"
+          *ngFor="let movie of moviesToShow"
           [title]="movie.title"
           [image]="movie.image"
           [yearOfProduction]="movie.yearOfProduction"
