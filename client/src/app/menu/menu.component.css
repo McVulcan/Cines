@@ -1,0 +1,45 @@
+@media only screen and (min-width: 768px) {
+  .ui.container {
+    width: 700px;
+    max-width: 700px;
+  }
+
+  nav.ui.container .ui.header {
+    float: left;
+    margin-top: 12px;
+  }
+
+  nav.ui.container .ui.inverted.compact.menu {
+    float: right;
+  }
+}
+
+.ui.inverted.vertical.center.aligned.segment {
+  padding-top: 3.6rem;
+}
+
+nav.ui.container .ui.inverted.compact.menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+nav.ui.container .ui.inverted.compact.menu .item {
+  padding-bottom: 0;
+}
+
+nav.ui.container .ui.inverted.compact.menu .item {
+  font-size: 1.1em;
+  padding-top: 1.4rem;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 1.4em;
+  margin-left: 1.4em;
+  margin-right: 1.4em;
+  border-radius: 0;
+}
+
+nav.ui.container .ui.inverted.compact.menu .active.item {
+  background-color: inherit;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}

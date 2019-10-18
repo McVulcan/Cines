@@ -1,20 +1,20 @@
 .ui.card {
-    margin: 0.4em;
+  margin: 0.4em;
 }
 
-div[class='ui card'] {
-    width: 180px;
+div[class='ui brown card'] {
+  width: 180px;
 }
 
 .ui.card .content .header {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .ui.card .content .extra.content {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .image img {
-    height: 230px;
-    width: 180px;
+  height: 230px;
+  width: 180px;
 }

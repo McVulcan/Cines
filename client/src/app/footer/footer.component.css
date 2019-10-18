@@ -1,0 +1,11 @@
+footer.ui.segment {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: gray;
+}
+
+footer.ui.segment a {
+  color: white;
+}

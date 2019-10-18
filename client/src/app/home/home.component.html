@@ -1,0 +1,33 @@
+<div class="background">
+  <div class="overlay">
+    <div class="ui content container">
+      <div class="ui stackable grid">
+        <div class="three wide column">
+          <div class="ui inverted vertical menu">
+            <div class="item">
+              <div class="ui inverted input">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  name="searchInput"
+                  #searchInput
+                  (change)="onSearch($event)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nine wide column">
+          <div class="ui link cards" [routerLink]="['/detail']">
+            <app-movie
+              *ngFor="let movie of moviesToShow"
+              [title]="movie.title"
+              [image]="movie.image"
+              [yearOfProduction]="movie.yearOfProduction"
+            ></app-movie>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
